@@ -1,9 +1,10 @@
-# Docker
-eval $(docker-machine env default)
-
 # Git
 if [ -f "$HOME/.git-prompt.sh" ]; then
   source "$HOME/.git-prompt.sh"
+fi
+
+if [ -f "$HOME/.git-completion.sh" ]; then
+  source "$HOME/.git-completion.sh"
 fi
 
 # Composer
@@ -12,8 +13,8 @@ if [ -d "$HOME/.composer/vendor/bin" ]; then
 fi
 
 # Prompt colors
-if [ -f "$HOME/.bashcolors" ]; then
-  source "$HOME/.bashcolors"
+if [ -f "$HOME/.bash_colors" ]; then
+  source "$HOME/.bash_colors"
 fi
 
 PS1="[$BIGreen\u$Color_Off@$BICyan\h$Color_Off $BIBlue\w$Color_Off] "
