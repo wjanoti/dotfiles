@@ -10,7 +10,7 @@
 
 dir=~/workspace/dotfiles                    # dotfiles directory
 olddir=~/workspace/dotfiles/dotfiles_old             # old dotfiles backup directory
-files="bash_colors bashrc bash_profile gitconfig"    # list of files/folders to symlink in homedir
+files="bash_colors bashrc bash_profile gitconfig vimrc"    # list of files/folders to symlink in homedir
 
 ##########
 
